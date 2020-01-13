@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="使用说明：点击悬浮答案即可获取答案\n注：进入设置页面可改变答案字体的颜色"/>
+        <Switch
+            android:id="@+id/myFloat"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="悬浮答案"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="感谢打赏作者(微信、支付宝) 作者QQ：1343370661 羊毛交流群：686483984"
+            android:layout_gravity="center"
+            android:textColor="#F44336"
+            android:background="#D8B28E"
+            android:textSize="25sp"
+            android:focusable="true"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/weixin" />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/zfb"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
